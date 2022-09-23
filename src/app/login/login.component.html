@@ -1,0 +1,29 @@
+
+
+<div class="container">
+    <h2>Sign in to your account</h2><br>
+
+<form (submit)="onLogin (loginForm)" #loginForm="ngForm">
+    
+   
+
+    <input type="text" id="email" placeholder="Email Address"  name="email" ngModel #emailInput="ngModel" class="input"><br><br>
+
+    
+    <input type="password" id="psw" placeholder="Password" name="password" ngModel #passwordInput="ngModel" class="input"><br><br>
+
+    <!-- <button>Login</button> -->
+    <input type="submit" value="Sign in">
+    <!-- <button (click)="goToSignup()">SignUp</button>  -->
+    <p class="mt-2 text-center text-sm text-gray-600">
+        Or
+        <a (click)="goToSignup()" class="font-medium text-indigo-600 hover:text-indigo-500">Not a user, want to REGISTER</a>
+      </p>
+
+   
+    
+</form>
+</div>
+
+
+<router-outlet></router-outlet>

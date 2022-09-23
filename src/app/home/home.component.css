@@ -1,0 +1,53 @@
+.main-body{
+    background-color: plum;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.box{
+    width: 33%;
+    border: 2px solid peru;
+    border-radius: 10px;
+
+    margin: 8px;
+    padding: 5px;
+    background-color: pink;
+}
+
+.bestSellerCakes{
+    /* 
+    
+        /* height:100px;
+        width:100px; */
+    margin-top: 30px;
+    
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: center;
+    border:2px solid black;
+    background-color: beige;
+   
+
+}
+
+/* h3{
+    color: rgba(0, 0, 255, 0.744);
+} */
+
+#brand{
+    width:180px;
+    margin-top:-10px;
+    margin-left:5px;
+    background: rgb(0, 85, 255);
+    border-radius: 20px;
+    color: white;
+    padding: 3px 6px;
+    text-align: center;
+}
+
+.col-sm-3{
+   margin: 0;
+}

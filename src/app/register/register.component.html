@@ -1,0 +1,39 @@
+<!-- [submit]="registerUser($event)" -->
+
+
+<div class="container">
+    
+    <h2 class="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">Regiter to your account</h2><br>
+ 
+
+<form (submit)="onSignup (signupForm)" #signupForm="ngForm">
+    
+   
+    <div>
+        <input name="name" ngModel #nameInput="ngModel" class="input " type="text" placeholder="Enter Your Name" id="username">
+    </div>
+    <div>
+        <input  name="email" ngModel #emailInput="ngModel" class="input " type="email" placeholder="Enter Your email" id="email">
+    </div>
+    <div>
+        <input name="password" ngModel #passwordInput="ngModel" class="input " type="password" placeholder="Enter Password" id="pwd">
+    </div>
+    <!-- <div>
+        <input type="password" placeholder="Confirm Password" id="cpwd">
+    </div> -->
+    <div>
+       <input type="submit" value="Register">
+    </div>
+
+   
+        <p class="mt-2 text-center text-sm text-gray-600">
+          Or
+          <a (click)="goToLogin()" class="font-medium text-indigo-600 hover:text-indigo-500">Already registered, want to Sign in</a>
+        </p>
+    
+
+    </form>
+   </div>
+  
+
+
